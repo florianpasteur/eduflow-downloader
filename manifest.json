@@ -13,6 +13,8 @@
         "https://app.eduflow.com/*"
       ],
       "js": [
+        "lib/marked.min.js",
+        "lib/turndown.js",
         "contentscript.js"
       ],
       "css": [
