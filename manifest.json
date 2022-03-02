@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Eduflow downloader",
+  "version": "1.0.0",
+  "description": "Enable to download content from eduflow to markdwon files along assets",
+  "short_name": "Edudownloader",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.eduflow.com/*"
+      ],
+      "js": [
+        "contentscript.js"
+      ],
+      "css": [
+        "style.css",
+        "mvp.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "style.css"
+  ],
+  "browser_action": {
+    "default_title": "Settings",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "512": "icons/icon512.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "512": "icons/icon512.png",
+    "128": "icons/icon128.png"
+  }
+}
